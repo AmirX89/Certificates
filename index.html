@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدارک رسمی برنامه نویسی</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/B Zar_0.ttf">
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+            text-decoration: none !important;
+            list-style-type: none;
+        }
+        @font-face {
+            font-family: b-zar;
+            src: url(fonts/B\ Zar_0.ttf);
+        }
+        body{
+            background-color: #141134;
+            color: white;
+        }
+        .img1:hover .btop{
+            top: calc(100% - 55%) !important;
+            transition: all 0.5s;
+        }
+        .img1:hover .img2{
+            filter: blur(5px);
+        }
+        @keyframes changecolor {
+            0%{color: green;}
+            25%{color: burlywood;}
+            50%{color: blue;}
+            75%{color: red;}
+            100%{color: purple; transform: scale(2);}
+        }
+        @keyframes changecolor2 {
+            0%{color: green;}
+            25%{color: burlywood;}
+            50%{color: blue;}
+            75%{color: red;}
+            100%{color: purple;}
+        }
+        @keyframes chaneborder {
+            0%{border:3px solid green;}
+            25%{border:3px solid burlywood;}
+            50%{border:3px solid blue;}
+            75%{border:3px solid red;}
+            100%{border:3px solid purple;}
+        }
+        .paragraph::before{
+            content: "از همراهی شما و فرصتی که برای آشنایی با مسیر حرفه‌ای من ایجاد کردید سپاسگزارم";
+            opacity: 0.5;
+        }
+        .paragraph2::before{
+            content: "از فرصتی که برای آشنایی با مسیر حرفه‌ای من ایجاد کردید سپاسگزارم";
+            opacity: 0.5;
+        }
+        .paragraph1::before{
+            content: "Thank you for visiting my portfolio and reviewing my credentials";
+            opacity: 0.5;
+        }
+        .backimg{
+            background-image: url(0) !important;
+        }
+        .backimg:hover{
+            background-image: url(img/Screenshot\ 2025-09-26\ 042850.png) !important;
+            border: 5px solid gold !important;
+            transition: border 0.5s;
+        }
+        .boxfilter:hover  .filterimg{
+            filter: blur(10px);
+            transition: all 0.5s;
+        }
+        .filterimg:hover + .showtext  {
+            opacity: 1 !important;
+            transition: all 0.3s;
+        }
+        .showtext:hover{
+            opacity: 1 !important;
+        }
+        @media screen and (max-width:992px) {
+            .backimg:hover{
+                background-color: lightgray !important;
+                background-image: url(0) !important;
+            }
+            .backimg:hover  .showtextvip{
+                display: block !important;
+            }
+            .widthinmobile{
+                width: 75% !important;
+            }
+        }
+        .selectcopy::selection{
+            background-color: #0A0A23;
+            color: white;
+        }
+        .selectcopy:hover{
+            box-shadow: 5px 5px 5px black;
+        }
+        .selectcopy2:hover{
+            box-shadow: 5px 5px 5px black;
+        }
+        .selectcopy2::selection{
+            background-color: white;
+            color: #0A0A23;
+        }
+        
+
+        .backimg2{
+            background-image: url(0) !important;
+        }
+        .backimg2:hover{
+            background-image: url(img/web.png) !important;
+            border: 5px solid blue !important;
+            transition: border 0.5s;
+        }
+        .backimg2:hover .filterimg2{
+            border: 1px solid black;
+        }
+        .boxfilter2:hover  .filterimg2 {
+            filter: blur(10px);
+            transition: all 0.5s;
+        }
+        .filterimg2:hover + .showtext2  {
+            opacity: 1 !important;
+            transition: all 0.3s;
+        }
+        .showtext2:hover{
+            opacity: 1 !important;
+        }
+        @media screen and (max-width:992px) {
+            .backimg2:hover{
+                background-color: #EDEBFB !important;
+                background-image: url(0) !important;
+            }
+            .backimg2:hover .filterimg2{
+                border: 0 !important;
+            }
+            .backimg2:hover .imgvip{
+                border: 1px solid black;
+            }
+            .backimg2:hover  .showtextvip2{
+                display: block !important;
+            }
+            .widthinmobile{
+                width: 75% !important;
+            }
+        }
+        .selectcopy3::selection{
+            background-color: rgb(17, 156, 202);
+            color: #F9F3E6;
+        }
+        .selectcopy3:hover{
+            box-shadow: 5px 5px 5px lightblue;
+        }
+        .selectcopy4:hover{
+            box-shadow: 5px 5px 5px lightblue;
+        }
+        .selectcopy4::selection{
+            background-color: black;
+            color: #D7E5EB;
+        }
+        .texthover:hover{
+            color: blue !important;
+        }
+        .logohover:hover{
+            transform: translate(10px , -5px);
+            transition: all 0.5s;
+        }
+        @keyframes imghover {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        .imghover5:hover{
+            animation: imghover 1.5s;
+            animation-iteration-count: infinite;
+            transition: all 1s;
+        }
+        .textviphover:hover{
+            color: blue !important;
+        }
+        .dangerhover::selection{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container-fluid d-lg-none">
+            <div class="row " style="height: 40px !important;">
+                <div class="col-12" style="background-image: url(img/7bcfe69c-02a1-4a0c-9182-41a2f3a6f676.jpg);background-size: cover; background-repeat: no-repeat; background-position: 100% ;"><span class="opacity-0">a</span></div>
+            </div>
+        </div>
+        <nav id="navbar-example2" class="navbar bg-secondary  w-100 border-bottom px-3 mb-3" style="position:sticky; top: 0;z-index: 9999;">
+            <a class="navbar-brand d-none d-lg-flex fw-bolder " style="animation: changecolor 5s;animation-iteration-count: infinite; animation-direction: alternate;animation-fill-mode: backwards; animation-delay: 1s;" href="#">enwo</a>
+            <img src="img/enwo-code.jpg" class="img-fluid rounded-5 d-lg-none" style="border:1px solid black" alt="" width="40">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#scrollspyHeading1">مدارک(1)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#scrollspyHeading2">مدارک(2)</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">بیشتر...</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">رزومه (نمونه کار)</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">درباره ما</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-transparent p-3 rounded-2 " style="padding-top: 60px !important;" tabindex="0">
+
+            <h4 id="scrollspyHeading1"  style="text-align: center; background-color: #0A0A23 ;font-family: b-zar" class="mb-5  w-50 m-auto p-3 rounded-3 widthinmobile">مدارک <a href="https://www.freecodecamp.org/amir-enwo" class="text-white text-decoration-underline">FreeCodeCamp</a></h4>
+
+            <div class="container-fluid border-bottom">
+                <div class="container">
+                    <div class="row p-2 p-lg-4">
+
+
+                        <div class="col-12 backimg p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/Screenshot\ 2025-09-26\ 042850.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter position-relative "><img class="img-fluid filterimg rounded-3" style=" transition: all 0.5s;" src="img/Screenshot 2025-09-26 042850.png" alt=""><div class="position-absolute opacity-0 showtext" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.freecodecamp.org/certification/amir-enwo/responsive-web-design" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy2" style="background-color: #0A0A23; border:3px solid white;">Responsive Web Design Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy"  style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک طراحی وب واکنش گرا</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg"><img class="img-fluid rounded-3 " src="img/Screenshot 2025-09-26 042850.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 " style="background-color: #0A0A23; border:3px solid white; font-size: 12px;">Responsive Web Design Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک طراحی وب واکنش گرا</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip d-none" style="background-color: black; border:3px solid gray;"><a class="text-white " href="https://www.freecodecamp.org/certification/amir-enwo/responsive-web-design">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 backimg p-lg-2 col-lg-4 mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/Screenshot\ 2025-09-26\ 063934.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter position-relative "><img class="img-fluid filterimg rounded-3" style=" transition: all 0.5s;" src="img/Screenshot 2025-09-26 063934.png" alt=""><div class="position-absolute opacity-0 showtext" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.freecodecamp.org/certification/amir-enwo/front-end-development-libraries" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy2" style="background-color: #0A0A23; border:3px solid white;">Front End Development Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy"  style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک برنامه نویسی فرانت اند (جدید)</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg"><img class="img-fluid rounded-3" src="img/Screenshot 2025-09-26 063934.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 " style="background-color: #0A0A23; border:3px solid white; font-size: 12px;">Front End Development Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:#0A0A23;border:3px solid #0A0A23; font-size: 12px; font-weight: bold;">مدرک برنامه نویسی فرانت اند (جدید)</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip d-none" style="background-color: black;  border:3px solid gray;"><a class="text-white " href="https://www.freecodecamp.org/certification/amir-enwo/front-end-development-libraries">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 backimg p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/Screenshot\ 2025-09-26\ 104258.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter position-relative "><img class="img-fluid filterimg rounded-3" style=" transition: all 0.5s;" src="img/Screenshot 2025-09-26 104258.png" alt=""><div class="position-absolute opacity-0 showtext" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.freecodecamp.org/certification/amir-enwo/legacy-front-end" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy2" style="background-color: #0A0A23; border:3px solid white;">Legacy Front End Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy"  style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک برنامه نویسی فرانت اند (قدیمی)</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg"><img class="img-fluid rounded-3" src="img/Screenshot 2025-09-26 104258.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 " style="background-color: #0A0A23; border:3px solid white; font-size: 12px;">Legacy Front End Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:#0A0A23;border:3px solid #0A0A23; font-size: 12px; font-weight: bold;">مدرک برنامه نویسی فرانت اند (قدیمی)</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip d-none" style="background-color: black;  border:3px solid gray;"><a class="text-white " href="https://www.freecodecamp.org/certification/amir-enwo/legacy-front-end">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 backimg p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/Screenshot\ 2025-09-26\ 104657.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter position-relative "><img class="img-fluid filterimg rounded-3" style=" transition: all 0.5s;" src="img/Screenshot 2025-09-26 104657.png" alt=""><div class="position-absolute opacity-0 showtext" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.freecodecamp.org/certification/amir-enwo/college-algebra-with-python-v8" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy2" style="background-color: #0A0A23; border:3px solid white;">Collage Algebra Python Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy"  style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک جبر دانشگاهی پایتون</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg"><img class="img-fluid rounded-3" src="img/Screenshot 2025-09-26 104657.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 " style="background-color: #0A0A23; border:3px solid white; font-size: 12px;">Collage Algebra Python Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک جبر دانشگاهی پایتون</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip d-none" style="background-color: black;  border:3px solid gray;"><a class="text-white " href="https://www.freecodecamp.org/certification/amir-enwo/college-algebra-with-python-v8">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-12 backimg p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/new.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter position-relative "><img class="img-fluid filterimg rounded-3" style=" transition: all 0.5s;" src="img/new.png" alt=""><div class="position-absolute opacity-0 showtext" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.freecodecamp.org/certification/amir-enwo/scientific-computing-with-python-v7" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy2" style="background-color: #0A0A23; border:3px solid white;font-size: 14px;">Scientific Computing Python Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy"  style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک محاسبات علمی با پایتون</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg"><img class="img-fluid rounded-3" src="img/new.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 " style="background-color: #0A0A23; border:3px solid white; font-size: 12px;">Scientific Computing Python Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;font-size: 14px;">مدرک محاسبات علمی با پایتون</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip d-none" style="background-color: black;  border:3px solid gray;"><a class="text-white " href="https://www.freecodecamp.org/certification/amir-enwo/scientific-computing-with-python-v7">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 backimg p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/new-2.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter position-relative "><img class="img-fluid filterimg rounded-3" style=" transition: all 0.5s;" src="img/new-2.png" alt=""><div class="position-absolute opacity-0 showtext" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.freecodecamp.org/certification/amir-enwo/data-visualization" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy2" style="background-color: #0A0A23; border:3px solid white;">Data Visualization Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy"  style="background-color: white; color:#0A0A23;border:3px solid #0A0A23;">مدرک مصورسازی داده و نمودار</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg"><img class="img-fluid rounded-3" src="img/new-2.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 " style="background-color: #0A0A23; border:3px solid white; font-size: 12px;">Data Visualization Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:#0A0A23;border:3px solid #0A0A23; font-size: 14px;">مدرک مصورسازی داده و نمودار</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip d-none" style="background-color: black;  border:3px solid gray;"><a class="text-white " href="https://www.freecodecamp.org/certification/amir-enwo/data-visualization">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--مدارک(2)-->
+
+                <h4 id="scrollspyHeading2"  style="text-align: center; background-color: #8657DF ;font-family: b-zar" class="my-5  w-50 m-auto p-3 rounded-3 widthinmobile">مدارک <a href="https://www.sololearn.com/en/profile/35049573" class="text-white text-decoration-underline">SoloLearn</a></h4>
+                
+                <div class="container-fluid border-bottom">
+                <div class="container">
+                    <div class="row p-2 p-lg-4">
+
+
+                        <div class="col-12 backimg2 p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/web.png); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter2 position-relative "><img class="img-fluid filterimg2 rounded-3" style=" transition: all 0.5s;" src="img/web.png" alt=""><div class="position-absolute opacity-0 showtext2" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.sololearn.com/certificates/CC-NIQLFCF4" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy4 text-black" style="background-color: #D7E5EB; border:3px solid black;">Web Development Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy3"  style="background-color: #F9F3E6; color:rgb(17, 156, 202);border:3px solid gray;">مدرک طراحی سایت</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg2"><img class="img-fluid rounded-3 imgvip" src="img/web.png" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 text-black" style="background-color: #D7E5EB; border:3px solid white; font-size: 12px;">Web Development Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:rgb(17, 156, 202);border:3px solid gray;">مدرک طراحی سایت</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip2 d-none" style="background-color: black; border:3px solid pink;"><a class="text-white " href="https://www.sololearn.com/certificates/CC-NIQLFCF4">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 backimg2 p-lg-2 col-lg-4 mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/html.jpg); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter2 position-relative "><img class="img-fluid filterimg2 rounded-3" style=" transition: all 0.5s;" src="img/html.jpg" alt=""><div class="position-absolute opacity-0 showtext2" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.sololearn.com/certificates/CC-1YJMCQMV" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy4 text-black" style="background-color: #D7E5EB; border:3px solid black;">Introduction HTML Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy3"  style="background-color: #F9F3E6; color:rgb(17, 156, 202);border:3px solid gray;">مدرک تکمیل دوره HTML</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg2"><img class="img-fluid rounded-3 imgvip" src="img/html.jpg" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 text-black" style="background-color: #D7E5EB; border:3px solid white; font-size: 12px;">Introduction HTML Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:rgb(17, 156, 202);border:3px solid gray;">مدرک تکمیل دوره HTML</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip2 d-none" style="background-color: black; border:3px solid pink;"><a class="text-white " href="https://www.sololearn.com/certificates/CC-1YJMCQMV">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 backimg2 p-lg-2 col-lg-4  mt-2 text-center d-flex align-items-center justify-content-center " style="border:3px double white; border-radius:20px; background-image: url(img/tech.jpg); background-size: cover; background-repeat: no-repeat; background-position: 50%; transition: border 0.5s;">
+                            <div>
+                                <div class="row justify-content-center d-none d-lg-flex align-items-center ">
+                                    <div class="col-12 boxfilter2 position-relative "><img class="img-fluid filterimg2 rounded-3" style=" transition: all 0.5s;" src="img/tech.jpg" alt=""><div class="position-absolute opacity-0 showtext2" style="right:39%;top: 50%;transition: all 0.3s; "><a href="https://www.sololearn.com/certificates/CC-VEOL8S5Y" class=" rounded-5 bg-black  text-white p-2" >مشاهده مدرک</a></div></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 selectcopy4 text-black" style="background-color: #D7E5EB; border:3px solid black;">Tech for everyone Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1  selectcopy3"  style="background-color: #F9F3E6; color:rgb(17, 156, 202);border:3px solid gray;">مدرک مفاهیم پایه فناوری</div>
+                                </div>
+
+                                <div class="row justify-content-center d-lg-none align-items-center ">
+                                    <div class="col-12 filterimg2"><img class="img-fluid rounded-3 imgvip" src="img/tech.jpg" alt=""></div>
+                                    <div class="col-12 fw-bolder w-75 p-2 rounded-5 mt-1 text-black" style="background-color: #D7E5EB; border:3px solid white; font-size: 12px;">Tech for everyone Certificate</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1" style="background-color: white; color:rgb(17, 156, 202);border:3px solid gray;">مدرک مفاهیم پایه فناوری</div>
+                                    <div class="col-12 w-75 p-2 rounded-5 mt-1 showtextvip2 d-none" style="background-color: black; border:3px solid pink;"><a class="text-white " href="https://www.sololearn.com/certificates/CC-VEOL8S5Y">مشاهده مدرک</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+                <h4 id="scrollspyHeading3" style="text-align: center; background-color: #D5DEE6; font-family: b-zar;" class="my-5  w-50 m-auto p-3 rounded-3 widthinmobile text-black fw-bold">رزومه کاری و <a href="https://github.com/AmirX89" class="text-black text-decoration-underline">نمونه کار ها</a></h4>
+               
+                   <div class="container-fluid border-bottom p-3">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-6 d-none d-lg-block  position-relative overflow-hidden img1">
+                            <img class="img-fluid img2  rounded-3   " src="img/amirhossein ghamari.png" alt=""> 
+                            <div class="kid position-absolute btop" style="left:42% ; top:1000px; transition: all 0.5s;"> 
+                                <button class="p-3 rounded-5 bg-black " ><a class="text-decoration-none text-white" href="https://www.canva.com/design/DAG0qUkwmoI/Zmm7Kvkfi09By43Ai-BRug/view?utm_content=DAG0qUkwmoI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93720b278d" >مشاهده رزومه</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-lg-inline overflow-hidden">
+                            <div class="row">
+                                <div class="text-danger bg-white rounded-3 mb-2 p-1 dangerhover">عکس ها سایت هایی هستند که خودم کد نویسی کرده ام و لینک هایی که مشاهده میکنید خود سایت اصلی در گوگل هستند برای مقایسه سایت طراحی شده توسط من با سایت اصلی در گوگل روی لینک ها کلیک نمایید 👇</div>
+                                <div class="col-12 ">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item"><img src="img/coinmarketcap1 (1).png" class="img-fluid rounded-3" alt=""><div style="background-color: #0D1421; border:1px solid white;" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت کوین مارکت کپ (<a href="https://coinmarketcap.com/" class="text-white text-decoration-underline textviphover" target="_blank">Coinmarketcap</a>) <span class="text-danger  ">1</span></h5></div></div>
+                                        <div class="item"><img src="img/nemoonekar (1).png" class="img-fluid rounded-3" alt=""><div style="background-color: #0F0F0F; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت یوتیوب (<a href="https://youtube.com/" class="text-white text-decoration-underline textviphover" target="_blank">Youtube</a>) <span class="text-danger  ">1</span></h5></div></div>
+                                        <div class="item"><img src="img/nemmonekar2 (1).png" class="img-fluid rounded-3" alt=""><div style="background-color: #543CA3; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت نوبیتکس (<a href="https://nobitex.ir/" class="text-white text-decoration-underline textviphover" target="_blank">Nobitex</a>) <span class="text-danger  ">1</span></h5></div></div>
+                                        <div class="item"><img src="img/nemoone.png" class="img-fluid rounded-3" alt=""><div style="background-color: #7B1415; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت دیجی کالا (<a href="https://www.digikala.com/" class="text-white text-decoration-underline textviphover" target="_blank">Digikala</a>) <span class="text-primary  ">1</span></h5></div></div>
+                                        <div class="item"><img src="img/nemoonekar (2).png" class="img-fluid rounded-3" alt=""><div style="background-color: #2AC9C8; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت ایکس وی پی ان (<a href="https://xvpn.io/fa/download/vpn-win" class="text-white text-decoration-underline textviphover" target="_blank">X-VPN</a>) <span class="text-danger  ">1</span></h5></div></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 ">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item"><img src="img/coinmarketcap1 (2).png" class="img-fluid rounded-3" alt=""><div style="background-color: #0D1421; border:1px solid white;" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت کوین مارکت کپ (<a href="https://coinmarketcap.com/" class="text-white text-decoration-underline textviphover" target="_blank">Coinmarketcap</a>) <span class="text-danger  ">2</span></h5></div></div>
+                                        <div class="item"><img src="img/youtybe.png" class="img-fluid rounded-3" alt=""><div style="background-color: #0F0F0F; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت یوتیوب (<a href="https://youtube.com/" class="text-white text-decoration-underline textviphover" target="_blank">Youtube</a>) <span class="text-danger  ">2</span></h5></div></div>
+                                        <div class="item"><img src="img/nobitex.png" class="img-fluid rounded-3" alt=""><div style="background-color: #543CA3; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت نوبیتکس (<a href="https://nobitex.ir/" class="text-white text-decoration-underline textviphover" target="_blank">Nobitex</a>) <span class="text-danger  ">2</span></h5></div></div>
+                                        <div class="item"><img src="img/digikala.png" class="img-fluid rounded-3" alt=""><div style="background-color: #7B1415; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت دیجی کالا (<a href="https://www.digikala.com/" class="text-white text-decoration-underline textviphover" target="_blank">Digikala</a>) <span class="text-primary  ">2</span></h5></div></div>
+                                        <div class="item"><img src="img/x-vpn.png" class="img-fluid rounded-3" alt=""><div style="background-color: #2AC9C8; border:1px solid white" class="rounded-3 mt-1 d-flex align-items-center justify-content-center p-2"><h5>سایت ایکس وی پی ان (<a href="https://xvpn.io/fa/download/vpn-win" class="text-white text-decoration-underline textviphover" target="_blank">X-VPN</a>) <span class="text-danger  ">2</span></h5></div></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 d-lg-none">
+                            <div class="row border p-1 rounded-3 bg-secondary">
+                                <div class="col-12"><img src="img/amirhossein ghamari.png" class="img-fluid rounded-3" alt=""></div>
+                                <div class="col-12 d-flex align-items-center justify-content-center"><a href="https://www.canva.com/design/DAG0qUkwmoI/Zmm7Kvkfi09By43Ai-BRug/view?utm_content=DAG0qUkwmoI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93720b278d" class="text-black bg-white mt-1 p-2 rounded-3" style="animation: chaneborder 5s; animation-iteration-count: infinite;">مشاهده رزومه</a></div>
+                                <div class="col-12 d-flex align-items-center justify-content-center"><a href="sites.html" class="text-white bg-black mt-1 p-2 rounded-3" style="border:3px dotted white;">مشاهده نمونه کارها</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+         
+        
+
+
+    </main>
+
+    <footer>
+
+        <h4 id="scrollspyHeading4"></h4>
+        <div class="absolute inset-0 z-0 p-2 d-none d-lg-block" style="background-image: radial-gradient(circle 850px at 50% 100px, rgba(139,92,246,0.4), transparent);font-family: b-zar"><span class="text-center position-relative fw-bolder fs-5" style="right: 50%;">درباره ما</span></div>
+        <div class="d-flex align-items-center justify-content-center p-2 fs-5 fw-bolder d-lg-none" style="background-color: rgba(139,92,246,0.4); font-family: b-zar"><span>درباره ما</span></div>
+        <div class="container-fluid  mt-3">
+            <div class="row border-bottom d-none d-lg-flex p-3">
+                <div class="col-1  fw-bolder fs-5 text-center">فریلنسری</div>
+                <div class="col-1  fw-bolder fs-5 text-center">صفحات اجتماعی</div>
+                <div class="col-1  fw-bolder fs-5 text-center">GITHUB</div>
+                <div class="col-7 "></div>
+                <div class="col-2  fw-bolder fs-5 text-center">امپراطوری انو 🔥🧑‍💻</div>
+                <div class="col-1  text-center mt-3"><a class="text-secondary texthover" href="https://ponisha.ir/profile/Amirhossein8900">پونیشا</a></div>
+                <div class="col-1  text-center mt-3 logohover" style="transition: all 0.5s;"><a href="https://www.instagram.com/enwo.dev/"><i class="bi bi-instagram bg-secondary p-2  rounded-5" style="color: pink;"></i></a></div>
+                <div class="col-1  text-center mt-3">AmirX89</div>
+                <div class="col-7 "></div>
+                <div class="col-2  text-center mt-3"><span style="color: green; font-weight: bolder;">enwo</span> , capital of coders 🎲🌐</div>
+                <div class="col-1  text-center mt-3"><a class="text-secondary texthover" href="https://www.karlancer.com/profile/1020792">کارلنسر</a></div>
+                <div class="col-1  text-center mt-3 logohover" style="transition: all 0.5s;"><a href="https://t.me/Enwo_Coders_01"><i class="bi bi-telegram bg-secondary p-2  rounded-5" style="color: blue;"></i></a></div>
+                <div class="col-1  text-center mt-3 logohover" style="transition: all 0.5s;"><a href="https://github.com/AmirX89"><i class="bi bi-github bg-secondary p-2  rounded-5" style="color: black;"></i></a></div>
+                <div class="col-7 "></div>
+                <div class="col-2  text-center mt-3"></div>
+                <div class="col-1  text-center mt-3"><a class="text-secondary texthover" href="https://pc0.ir/rsm/725919">پارسکدرز</a></div>
+                <div class="col-1  text-center mt-3"></div>
+                <div class="col-1  text-center mt-3"></div>
+                <div class="col-7"></div>
+                <div class="col-2 d-flex justify-content-center align-items-center  "><img src="img/enwo-code.jpg" class="img-fluid imghover5" style="border-radius: 100%; width: 100px; border:1px solid black" alt=""></div>
+            </div>
+
+            <div class="row d-lg-none border-bottom p-3">
+                <div class="col-3">فریلنسری</div>
+                <div class="col-3" style="white-space: nowrap;">صفحات اجتماعی</div>
+                <div class="col-3"></div>
+                <div class="col-3" style="animation: changecolor2 5s;animation-iteration-count: infinite; animation-direction: alternate;animation-fill-mode: backwards; animation-delay: 1s;">enwo</div>
+                <div class="col-3 mt-2"><a class="text-secondary" href="https://ponisha.ir/profile/Amirhossein8900">پونیشا</a></div>
+                <div class="col-3 mt-2 d-flex align-items-center justify-content-center"><a href="https://www.instagram.com/enwo.dev/"><i class="bi bi-instagram bg-secondary p-1  rounded-5" style="color: pink;"></i></a></div>
+                <div class="col-3 mt-2"></div>
+                <div class="col-3 mt-2">امپراطوری</div>
+                <div class="col-3 mt-2"><a class="text-secondary" href="https://www.karlancer.com/profile/1020792">کارلنسر</a></div>
+                <div class="col-3 mt-2 d-flex align-items-center justify-content-center"><a href="https://t.me/Enwo_Coders_01"><i class="bi bi-telegram bg-secondary p-1  rounded-5" style="color: blue;"></i></a></div>
+                <div class="col-3 mt-2"></div>
+                <div class="col-3 mt-2">انو</div>
+                <div class="col-3 mt-2"><a class="text-secondary" href="https://pc0.ir/rsm/725919">پارسکدرز</a></div>
+                <div class="col-3 mt-2 d-flex align-items-center justify-content-center"><a href="https://github.com/AmirX89"><i class="bi bi-github bg-secondary p-1  rounded-5" style="color: black;"></i></a></div>
+                <div class="col-3 mt-2"></div>
+                <div class="col-3 mt-2">🔥</div>
+            </div>
+
+            <div class="row d-none d-lg-flex">
+                <div class="col-12 text-center paragraph"></div>
+                <div class="col-12 text-center paragraph1"></div>
+            </div>
+            <div class="row d-lg-none" style="font-size: 12px;">
+                <div class="col-12 text-center paragraph2"></div>
+                <div class="col-12 text-center paragraph1"></div>
+            </div>
+        </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+    });
+    $('.owl-carousel').owlCarousel({
+    rtl:true,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+</body>
+</html>
