@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انو | طراحی و توسعه وب سایت</title>
+    <meta name="description" content="توسعه و طراحی وب سایت های شرکتی و فروشگاهی و شخصی و... شما با بهترین قیمت و سریع ترین زمان ممکن.">
+    <meta name="author" content="انو | enwo">
+    <meta property="og:title" content="انو | طراحی و توسعه وب سایت حرفه‌ای">
+    <meta property="og:description" content="طراحی سایت با بهترین کیفیت و قیمت مناسب. خدمات: فرانت اند، وردپرس، ریسپانسیو">
+    <meta property="og:type" content="website">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema Markup برای سئو -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "انو",
+        "description": "طراحی و توسعه وب سایت حرفه‌ای",
+        "url": "https://enwo.ir",
+        "logo": "https://enwo.ir/images/enwo-logo.jpg",
+        "telephone": "+98-911-525-0609",
+        "email": "enwo.dev.ir@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IR",
+            "addressRegion": "گلستان",
+            "addressLocality": "گنبدکاووس"
+        },
+        "serviceType": ["طراحی سایت", "توسعه فرانت اند", "وردپرس", "UI/UX Design"],
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "گنبدکاووس"
+            },
+            {
+                "@type": "State",
+                "name": "گلستان"
+            },
+            {
+                "@type": "Country",
+                "name": "ایران"
+            }
+        ],
+        "priceRange": "اقتصادی",
+        "openingHours": "Sa-Fr 09:00-22:00",
+        "sameAs": [
+            "https://github.com/AmirX89",
+            "https://t.me/Enwo_Coders_01",
+            "https://www.instagram.com/enwo.dev/"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="تغییر حالت تاریک/روشن">
+        <i class="bi bi-moon"></i>
+    </button>
+
+    <!-- hedear -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                    <h1 class="hero-title mb-4 d-lg-none">
+                        <span class="title-glow2">enwo</span> | انو
+                    </h1>
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <h1 class="hero-title mb-4 d-none d-lg-block">
+                        <span class="title-glow">enwo</span> | انو
+                    </h1>
+                    
+                    <div class="typing-container mb-4">
+                        <div class="typing-text" id="typingText">
+                            توسعه دهنده فرانت اند & وردپرس
+                        </div>
+                    </div>
+                    
+                    <p class="hero-description mb-4">
+                        به <strong>امپراطوری انو</strong> خوش آمدید 💫<br>
+                        تخصص ما در <strong>طراحی سایت</strong> و <strong>توسعه فرانت اند</strong> است.<br>
+                        پروژه‌های شما را با بهترین کیفیت و سریع‌ترین زمان تحویل می‌دهیم.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('portfolio')">
+                            <i class="bi bi-eye me-2"></i> نمونه کار ها و ثبت سفارش
+                        </button>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="bi bi-chat-dots me-2"></i> شبکه های اجتماعی
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 order-lg-2 order-1 mb-5 mb-lg-0">
+                    <div class="logo-container">
+                        <div class="logo-glow"></div>
+                        <img src="images/enwo-logo.jpg" alt="لوگو انو - طراحی سایت و توسعه فرانت اند" class="logo-image  d-none d-lg-block img-fluid">
+                        <img src="images/enwo-logo.jpg" alt="لوگو انو - طراحی سایت و توسعه فرانت اند" class="logo-image2 d-lg-none img-fluid">
+                        <div class="floating-icon icon-1">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+
+    
+    <nav class="section-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                
+                <button class="nav-btn active" onclick="showSection('skills')" data-section="skills">
+                    <i class="bi bi-gear me-2"></i> مهارت‌ها
+                </button>
+                <button class="nav-btn" onclick="showSection('portfolio')" data-section="portfolio">
+                    <i class="bi bi-briefcase me-2"></i> نمونه کارها
+                </button>
+                <button class="nav-btn" onclick="showSection('certificates')" data-section="certificates">
+                    <i class="bi bi-award me-2"></i> گواهینامه‌ها
+                </button>
+                <button class="nav-btn" onclick="showSection('about')" data-section="about">
+                    <i class="bi bi-person me-2"></i> درباره من
+                </button>
+                <button class="nav-btn btn-order" onclick="showSection('buy')">
+                    <i class="bi bi-cart3 me-2"></i> ثبت سفارش
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <!-- skills -->
+        <section id="skills" class="content-section active">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="bi bi-stars me-3"></i>
+                    مهارت‌های تخصصی
+                    <span class="title-sub">| Skills</span>
+                </h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="skill-card fade-up delay-1">
+                            <div class="skill-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h3>توسعه Frontend</h3>
+                            <p>HTML5 , CSS3 , JavaScript , Bootstrap</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 98%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="skill-card fade-up delay-2">
+                            <div class="skill-icon">
+                                <i class="bi bi-brush"></i>
+                            </div>
+                            <h3>رابط کاربری</h3>
+                            <p>UI , UX , ریسپانسیو , هاستینگ و دامنه , پشتیبانی</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 99%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="skill-card fade-up delay-3">
+                            <div class="skill-icon">
+                                <i class="bi bi-wordpress"></i>
+                            </div>
+                            <h3>وردپرس</h3>
+                            <p>طراحی قالب ، افزونه‌نویسی ، بهینه‌سازی</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 97%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="bi bi-collection me-3"></i>
+                    گالری پروژه‌ها
+                    <span class="title-sub">| Portfolio</span>
+                </h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="project-card fade-up delay-1">
+                            <div class="project-image">
+                                <img src="images/sites (1_) (1).png" alt="سایت فروشگاهی دنیای شاد - فروش اسباب بازی" class="img-fluid">
+                                <div class="project-overlay">
+                                    <span class="project-badge">فروشگاهی</span>
+                                    <div class="project-info">
+                                        <h4>دنیای شاد</h4>
+                                        <p>سایت فروش اسباب‌بازی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="project-card fade-up delay-2">
+                            <div class="project-image">
+                                <img src="images/sites (1_) (2).png" alt="سایت کتاب Noor - نمایش و فروش کتاب" class="img-fluid">
+                                <div class="project-overlay">
+                                    <span class="project-badge">کتاب</span>
+                                    <div class="project-info">
+                                        <h4>فروشگاه کتاب نور</h4>
+                                        <p>نمایش و فروش کتاب</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>Bootstrap</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="project-card fade-up delay-3">
+                            <div class="project-image">
+                                <img src="images/sites (1_) (3).png" alt="سایت Game Yar - فروش لوازم گیمینگ" class="img-fluid">
+                                <div class="project-overlay">
+                                    <span class="project-badge">گیمینگ</span>
+                                    <div class="project-info">
+                                        <h4>Game Yar</h4>
+                                        <p>فروش لوازم گیمینگ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>Python</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="content-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="bi bi-trophy me-3"></i>
+                    مدارک معتبر
+                    <span class="title-sub">| Certificates</span>
+                </h2>
+                
+                <div class="certificates-slider">
+                    <div class="certificate-card">
+                        <div class="cert-image">
+                            <img src="images/front end development libraries.png" alt="گواهینامه Front End Development Libraries از FreeCodeCamp" class="img-fluid">
+                        </div>
+                        <div class="cert-content">
+                            <h4>Front End Development</h4>
+                            <p>FreeCodeCamp certificate</p>
+                            <a href="https://freecodecamp.org/certification/amir-enwo/front-end-development-libraries" 
+                               target="_blank" 
+                               class="cert-link">
+                                مشاهده مدرک
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <div class="cert-image">
+                            <img src="images/responsive web design.png" alt="گواهینامه Responsive Web Design از FreeCodeCamp" class="img-fluid">
+                        </div>
+                        <div class="cert-content">
+                            <h4>Responsive Web Design</h4>
+                            <p>FreeCodeCamp certificate</p>
+                            <a href="https://freecodecamp.org/certification/amir-enwo/responsive-web-design" 
+                               target="_blank" 
+                               class="cert-link">
+                                مشاهده مدرک
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <div class="cert-image">
+                            <img src="images/Introduction to HTML.jpg" alt="گواهینامه Introduction to HTML از SoloLearn" class="img-fluid">
+                        </div>
+                        <div class="cert-content">
+                            <h4>Introduction to HTML</h4>
+                            <p>SoloLearn Certificate</p>
+                            <a href="https://sololearn.com/certificates/CC-1YJMCQMV" 
+                               target="_blank" 
+                               class="cert-link">
+                                مشاهده مدرک
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <div class="cert-image">
+                            <img src="images/Web development.png" alt="گواهینامه Web Development از SoloLearn" class="img-fluid">
+                        </div>
+                        <div class="cert-content">
+                            <h4>Web Development</h4>
+                            <p>SoloLearn Certificate</p>
+                            <a href="https://sololearn.com/certificates/CC-NIQLFCF4" 
+                               target="_blank" 
+                               class="cert-link">
+                                مشاهده مدرک
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="bi bi-person-circle me-3"></i>
+                    درباره من
+                    <span class="title-sub">| About Me</span>
+                </h2>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-content fade-up">
+                            <h3 class="mb-4">سلام، من امیرحسین هستم 👋</h3>
+                            <p class="lead">
+                                بنیانگذار و توسعه‌دهنده اصلی <strong>برند انو</strong> و دارای مهارت در زمینه های :
+                            </p>
+                            <ul class="about-list">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> طراحی و توسعه فرانت اند</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> طراحی قالب وردپرس</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> UI/UX Design</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> توسعه وب‌سایت‌های ریسپانسیو</li>
+                            </ul>
+                            
+                            <div class="contact-info mt-4">
+                                <h5><i class="bi bi-envelope me-2"></i> ارتباط کاری:</h5>
+                                <div class="email-box">
+                                    <span>enwo.dev.ir@gmail.com</span>
+                                    <button class="copy-btn" onclick="copyEmail()">
+                                        <i class="bi bi-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="freelance-platforms fade-up delay-1">
+                            <h4 class="mb-4">پروفایل‌های فریلنسری 🔥</h4>
+                            <div class="row g-3">
+                                <div class="col-4">
+                                    <a href="https://karlancer.com/profile/1020792" target="_blank" class="platform-card">
+                                        <div class="platform-logo">
+                                            <img src="images/karlancer logo.jpg" alt="کارلنسر">
+                                        </div>
+                                        <span class="platform-name">کارلنسر</span>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://ponisha.ir/profile/Amirhossein8900" target="_blank" class="platform-card">
+                                        <div class="platform-logo">
+                                            <img src="images/ponisha logo(1).jpg" alt="پونیشا">
+                                        </div>
+                                        <span class="platform-name">پونیشا</span>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://pc0.ir/rsm/725919" target="_blank" class="platform-card">
+                                        <div class="platform-logo">
+                                            <img src="images/parscoders logo.png" alt="پارسکدرز">
+                                        </div>
+                                        <span class="platform-name">پارسکدرز</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="buy" class="content-section">
+            <div class="container">
+                <div class="order-section text-center">
+                    <h2 class="section-title mb-4">آماده شروع پروژه شما هستم!</h2>
+                    <p class="lead mb-5">برای دریافت مشاوره رایگان و ثبت سفارش، یکی از راه‌های زیر را انتخاب کنید:</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="bi bi-telegram"></i>
+                                </div>
+                                <h4>ربات تلگرام</h4>
+                                <p>برای مشاوره سریع</p>
+                                <a href="https://t.me/enwo_dev_bot" target="_blank" class="method-btn">
+                                    پیام در تلگرام
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <h4>ثبت نام در سایت</h4>
+                                <p>پشتیبانی و گفتگو</p>
+                                <a href="login.html" target="_blank" class="method-btn">
+                                    گفتگو در واتساپ
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="footer-title mb-4">در شبکه‌های اجتماعی همراه ما باشید</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/AmirX89" target="_blank" aria-label="GitHub" 
+                           style="color: white !important;">
+                            <i class="bi bi-github" style="color: black !important;"></i>
+                        </a>
+                        <a href="https://t.me/Enwo_Coders_01" target="_blank" aria-label="Telegram"
+                           style="color: white !important;">
+                            <i class="bi bi-telegram" style="color: blue !important;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/enwo.dev/" target="_blank" aria-label="Instagram"
+                           style="color: white !important;">
+                            <i class="bi bi-instagram " style="color: #FE0373 !important;"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-info mt-5">
+                        <p class="copyright">
+                        </p>
+                        <p class="site-url">
+                            <i class="bi bi-globe me-2"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
